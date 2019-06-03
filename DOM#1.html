@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DOM Buttons</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<style type="text/css">
+		button {
+			float: bottom;
+			display: block;
+		}
+		p {
+			display: inline;
+		}
+		h1 {
+			text-align: center;
+		}
+
+	</style>
+</head>
+<body>
+
+<h1>Button Argument</h1>
+<table align="center" cellpadding="5" cellspacing="5" bgcolor="yellow">
+
+<tr>
+	<td><button class="btn btn-outline-dark" onclick="Test()">Button #1</button></td>
+<td><p id="p1"></p></td>
+</tr>
+<tr>
+	<td><button class="btn btn-outline-dark" onclick="Next()">Button #2</button></td>
+	<td><p id="p2"></p></td>
+</tr>
+
+</table>
+
+<script type="text/javascript">
+	var Test = () => {
+		document.getElementById("p2").innerHTML = "I'm right ";
+		document.getElementById("p1").innerHTML = "";
+	
+	
+	}
+	var Next = () => {
+
+		document.getElementById("p1").innerHTML = "No I'm right!";
+		document.getElementById("p2").innerHTML = "";
+	}
+</script>
+
+
+
+
+
+</body>
+</html>
